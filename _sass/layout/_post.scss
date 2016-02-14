@@ -1,5 +1,5 @@
 ////
-/// Hero
+/// Post
 ///
 /// @group Layout
 ////
@@ -34,8 +34,6 @@
     font-size: 2rem;
     line-height: 1.6;
     color: map-get($color, "gray-light");
-    //padding-left: map-get($grid, "md");
-    //border-left: 0.1rem solid map-get($color, "gray-lighter");      
     margin-bottom: map-get($grid, "xl");
 
     @media only screen and (min-width: map-get($breakpoint, "lg")) {
@@ -150,11 +148,6 @@
 
   &-figure {
     margin-bottom: map-get($grid, "xl");
-    //background-color: map-get($color, "gray-lighter");
-    //padding: map-get($grid, sm);
-    //border: map-get($grid, xxs) solid map-get($color, "gray-lighter");
-    //max-width: 400px;
-
     
     &.mobile {
       display: inline-block;
@@ -163,7 +156,6 @@
         margin-right: map-get($grid, "xl");
       }
     }
-
 
     &-image {
       max-width: 100%;

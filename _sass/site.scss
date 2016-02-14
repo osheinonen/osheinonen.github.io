@@ -2,14 +2,16 @@
 /// Site
 ///
 /// @group Main
-/// @author Oskari Heinonen <osheinonen@gmail.com>
 ////
 
 /// Reset browser default styles
 @import "helper/reset";
 
+/// Variables and maps
 @import "config";
 
+/// Functions and helpers
 @import "helper/functions";
 
+/// Base layout
 @import "layout/base";
