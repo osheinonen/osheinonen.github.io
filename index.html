@@ -3,21 +3,29 @@ layout: default
 ---
 
 <div class="home">
+  
+  <div class="home-heading">Hello! My name is Oskari.<br>I'm a Front End Developer &<br>Designer</div>
 
-  <h1 class="page-heading">Posts</h1>
+  <div class="home-text">
+    <p class="home-text-paragraph">I have a passion for learning new things. I am currently working as Web Developer at<em class="emphasis">Verkkovaraani</em>.</p>
+  </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+  <div class="home-work">
+    <h1 class="home-work-heading">Selected projects</h1>
+    <div class="home-work-list">
+      {% for post in site.categories.portfolio %}
+      <a href="{{ post.url | prepend: site.baseurl }}" class="work">
+        <div class="work-image" style="background-image: url({{ post.thumb }});"></div>
+        <div class="work-text">
+          <h2 class="work-text-title">{{ post.title }}</h2>
+          <div class="work-text-tag">
+            {% for tag in post.tags %}
+            <div class="work-text-tag-item">{{ tag }}</div>
+            {% endfor %}
+          </div>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
 </div>

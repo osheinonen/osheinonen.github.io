@@ -1,0 +1,16 @@
+---
+layout: post
+title:  "FakeFish"
+date:   2015-11-20 20:21:47 +0200
+backgrounds:
+    - /assets/img/fakefish.jpg
+thumb: /assets/img/fakefish.jpg
+desktop:
+    - /assets/img/fakefish-desktop01.jpg
+    - /assets/img/fakefish-desktop02.jpg
+mobile:
+    - /assets/img/fakefish-mobile01.jpg
+categories: portfolio
+tags: design development
+---
+A website project for FakeFish.

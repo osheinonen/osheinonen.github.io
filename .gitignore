@@ -1,3 +1,9 @@
+# Compiled source #
+###################
 _site
-.sass-cache
 .jekyll-metadata
+
+# Other source #
+###################
+/.sass-cache/
+/node_modules/

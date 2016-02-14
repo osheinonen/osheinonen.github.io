@@ -1,0 +1,90 @@
+////
+/// Header
+///
+/// @group Layout
+////
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: map-get($typography, "content");
+  font-size: 1.6em;
+  line-height: 1.4;
+  color: map-get($color, "gray-lighter");
+
+  padding: map-get($grid, "xs");
+
+  @media only screen and (min-width: map-get($breakpoint, "md")) {
+    padding: map-get($grid, "sm");
+  }
+
+  @media only screen and (min-width: map-get($breakpoint, "lg")) {
+    padding: map-get($grid, "md");
+  }
+}
+
+.site {
+  background-color: map-get($color, "blue-darkest");
+  background-color: #161C21;
+  padding: map-get($grid, "xl");
+  min-height: 100vh;
+  padding: map-get($grid, "md");
+  padding-top: map-get($grid, "xl") * 2;
+
+  @media only screen and (min-width: map-get($breakpoint, "md")) {
+    padding: map-get($grid, "xl");
+    padding-top: map-get($grid, "xl") * 2.5;
+  }
+
+  @media only screen and (min-width: map-get($breakpoint, "lg")) {
+    padding: map-get($grid, "xxl");
+    padding-top: map-get($grid, "xl") * 3;
+  }
+}
+
+//Inview
+.is-hidden {
+  opacity: 0;
+  transform: translateY(-20px);
+}
+
+.is-inview {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity map-get($transition, "duration") map-get($transition, "function"),
+              transform map-get($transition, "duration") map-get($transition, "function");
+  
+  @for $i from 1 through 10 {
+    &-#{$i} {
+      transition: opacity (map-get($transition, "duration") - $i/1.5) map-get($transition, "function") #{$i/1.5 + unquote("s")},
+                  transform map-get($transition, "duration") map-get($transition, "function");
+    }
+  }
+}
+
+/// Import common
+@import "common";
+
+/// Import header
+@import "header";
+
+/// Import hero
+@import "hero";
+
+/// Import hero
+@import "home";
+
+/// Import post
+@import "post";
+
+/// Import content
+@import "content";
+
+/// Import footer
+@import "footer";

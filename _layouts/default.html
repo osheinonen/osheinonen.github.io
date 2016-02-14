@@ -5,15 +5,29 @@
 
   <body>
 
-    {% include header.html %}
+    <noscript>
+      <style>
+        .is-hidden{opacity:1;-webkit-transform:translateY(0px);transform:translateY(0px)}
+      </style>
+    </noscript>
 
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
+    <div class="site">
+
+      <div class="container">
+
+        {% include header.html %}
+
+        <div class="site-main is-hidden js-show-inview">
+          {{ content }}
+        </div>
+
+        {% include footer.html %}
+
       </div>
+      
     </div>
 
-    {% include footer.html %}
+    <script src="{{ "/assets/js/main.js" | prepend: site.baseurl }}"></script>
 
   </body>
 

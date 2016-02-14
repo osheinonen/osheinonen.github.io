@@ -1,0 +1,36 @@
+{
+  "name": "osheinonen.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "^0.4.5",
+    "autoprefixer": "^6.1.0",
+    "css-mqpacker": "^4.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-contrib-sass": "^0.9.2",
+    "grunt-postcss": "^0.7.1",
+    "grunt-sassdoc": "^2.0.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.1.0",
+    "cssnano": "^3.3.2",
+    "grunt-contrib-connect": "^0.11.2",
+    "grunt-jekyll": "^0.4.3",
+    "grunt-postcss": "^0.7.1",
+    "pixrem": "^3.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/osheinonen/osheinonen.github.io"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/osheinonen/osheinonen.github.io/issues"
+  },
+  "homepage": "https://github.com/osheinonen/osheinonen.github.io"
+}

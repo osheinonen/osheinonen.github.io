@@ -1,0 +1,173 @@
+////
+/// Hero
+///
+/// @group Layout
+////
+
+.post {
+  margin-top: map-get($grid, "xl");
+
+  @media only screen and (min-width: map-get($breakpoint, "lg")) {
+    margin-top: map-get($grid, "xxl");
+  }
+
+  &-heading {
+    font-size: 4rem;
+    font-weight: 700;
+    color: map-get($color, "gray-light");
+    margin-bottom: map-get($grid, "xl");
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+
+    @media only screen and (min-width: map-get($breakpoint, "lg")) {
+      width: 40%;
+      font-size: 4.8rem;
+    }
+  }
+
+  &-content {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    font-family: map-get($typography, "heading");
+    font-size: 2rem;
+    line-height: 1.6;
+    color: map-get($color, "gray-light");
+    //padding-left: map-get($grid, "md");
+    //border-left: 0.1rem solid map-get($color, "gray-lighter");      
+    margin-bottom: map-get($grid, "xl");
+
+    @media only screen and (min-width: map-get($breakpoint, "lg")) {
+      width: 50%;
+      margin-top: map-get($grid, "md");
+      font-size: 2.8rem;
+    }
+
+    a {
+      color: map-get($color, "primary");
+      transition: color 0.12s ease-in-out;
+
+      &:hover {
+        color: map-get($color, "primary-light");
+      }
+    }
+
+    & > h1 {
+      font-size: 3.8rem;
+      font-weight: 700;
+      color: map-get($color, "blue-light");
+      border-bottom: 2px solid map-get($color, "blue-lighter");
+      margin-top: map-get($grid, "md");
+      margin-bottom: map-get($grid, "md");
+
+      @media only screen and (min-width: map-get($breakpoint, "lg")) {
+        margin-top: map-get($grid, "xl");
+      }
+    }
+
+    & > h2 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      color: map-get($color, "blue-light");
+      margin-top: map-get($grid, "md");
+      margin-bottom: map-get($grid, "md");
+
+      @media only screen and (min-width: map-get($breakpoint, "lg")) {
+        margin-top: map-get($grid, "xl");
+      }
+    }
+
+    & > h3 {
+      font-weight: 700;
+      //color: map-get($color, "blue-light");
+      margin-top: map-get($grid, "md");
+
+      @media only screen and (min-width: map-get($breakpoint, "lg")) {
+        margin-top: map-get($grid, "xl");
+      }
+    }
+
+    & > p {
+      line-height: 1.4em;
+      max-width: 950px;
+      margin-top: map-get($grid, "xxs");
+      margin-bottom: map-get($grid, "sm");
+
+      & > b,
+      & > strong {
+        font-weight: 700;
+      }
+
+      & > em {
+        font-style: italic;
+      }
+    }
+
+    & > blockquote {
+      color: #949494;
+    }
+
+    & > ul {
+      margin-top: map-get($grid, "xxs");
+      margin-bottom: map-get($grid, "sm");
+
+      & > li {
+        margin-bottom: map-get($grid, "xxs");
+        position: relative;
+        padding-left: map-get($grid, "lg");
+
+        &:before {
+          content: "";
+          position: absolute;
+          top: 0.5em;
+          left: 0;
+          width: 1em;
+          height: 0.5em;
+          display: block;
+          background-color: map-get($color, "gray-dark");
+          transform: translateY(0%) scale(0.4);
+        }
+      }
+    }
+
+    & > hr {
+      border: 0;
+      width: 100%;
+      height: 2px;
+      background-color: rgba(0,0,0,0.1);
+      display: block;
+    }
+
+    & > *:first-child {
+      margin-top: 0;
+    }
+
+    & > *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &-figure {
+    margin-bottom: map-get($grid, "xl");
+    //background-color: map-get($color, "gray-lighter");
+    //padding: map-get($grid, sm);
+    //border: map-get($grid, xxs) solid map-get($color, "gray-lighter");
+    //max-width: 400px;
+
+    
+    &.mobile {
+      display: inline-block;
+      
+      &:not(:last-child) {
+        margin-right: map-get($grid, "xl");
+      }
+    }
+
+
+    &-image {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}

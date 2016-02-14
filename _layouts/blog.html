@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<article class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+  </header>
+
+  <div class="post-content">
+    {{ content }}
+
+    <div class="home-work">
+      <h1 class="home-work-heading">Selected work</h1>
+      <div class="home-work-list">
+        {% for post in site.categories.blog %}
+        <div class="work">
+          <div class="work-image" style="background-image: url({{ post.thumb }});"></div>
+          <span class="work-date">{{ post.date | date: "%b %-d, %Y" }}</span>
+          <span class="work-categories">{{ post.categories }}</span>
+          <h2 class="work-title"><a class="work-title-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+</article>

@@ -1,0 +1,80 @@
+////
+/// Header
+///
+/// @group Layout
+////
+
+.site-header {
+  &.is-inview {
+    .title {
+      &:after {
+        transform: scaleX(1);
+      }
+    }
+  }
+}
+
+.title {
+  display: inline-block;
+  vertical-align: top;
+
+  font-size: 1.8rem;
+  letter-spacing: 0.05em;
+  color: map-get($color, "gray-light");
+  font-weight: 700;
+
+  position: relative;
+  padding: map-get($grid, "md") 0;
+  margin-bottom: map-get($grid, "md");
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 0.2rem;
+    width: map-get($grid, "md");
+    background-color: map-get($color, "gray-light");
+
+    transform-origin: 0 50%;
+    transform: scaleX(0);
+    transition: transform map-get($transition, "duration") map-get($transition, "function");
+  }
+}
+
+.nav {
+  display: block;
+  vertical-align: top;
+  //text-align: right;
+
+  &-link {
+    font-size: 1.8rem;
+    letter-spacing: 0.05em;
+    color: map-get($color, "gray-light");
+    font-weight: 400;
+    text-transform: lowercase;
+
+    padding: map-get($grid, "md") 0;
+    margin-bottom: map-get($grid, "md");
+
+    &:not(:first-child) {
+      margin-left: map-get($grid, "md");
+    }
+
+    &.active {
+      //color: map-get($color, "primary");
+      position: relative;
+
+      // &:after {
+      //   content: "";
+      //   position: absolute;
+      //   bottom: 0;
+      //   left: 0;
+      //   height: 0.2rem;
+      //   width: map-get($grid, "md");
+      //   background-color: map-get($color, "gray-light");
+      // }
+    }
+  }
+}
+
