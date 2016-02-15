@@ -2,6 +2,8 @@
 layout: page
 title: About
 permalink: /about/
+background:
+    - /assets/img/oskari.jpg
 ---
 ## Me
 
@@ -9,7 +11,7 @@ I’m Oskari Heinonen a web developer & designer with over 3 years of experience
 
 ## Skills
 
-- strong skills in HTML5, CSS3, SASS/Less
+- strong skills in HTML5, CSS3, Sass/LESS
 - great knowledge of UI/UX Design
 - strong skills in creating Responsive Websites, SEO and Website Speed Optimization
 - very familiar with Javascript, jQuery, Grunt/Gulp, Git
@@ -20,7 +22,7 @@ I’m Oskari Heinonen a web developer & designer with over 3 years of experience
 
 ## Experience
 
-### Web Developer & Designer
+### Front End Developer
 > Verkkovaraani
 > October 2014 - Present
 
@@ -42,7 +44,7 @@ I’m Oskari Heinonen a web developer & designer with over 3 years of experience
 
 ## Education
 
-### IT Engineer
+### Bachelor of Engineering / Information Technology
 > Turku University of Applied Sciences
 > 2010 - 2014
 

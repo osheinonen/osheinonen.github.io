@@ -13,4 +13,4 @@ mobile:
 categories: portfolio
 tags: design development
 ---
-A website project for FakeFish.
+FakeFish is an indie game development company from Turku. I co-founded it back in summer 2014 with my friends. I designed and created a dark themed website for the company.

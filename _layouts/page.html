@@ -6,13 +6,11 @@ layout: default
   <h1 class="post-heading">{{ page.title }}</h1>
 
   <div class="post-content">
+    <div class="post-content-background">
+      <img src="{{ page.background }}" alt="oskari heinonen">
+    </div>
     {{ content }}
   </div>
 
-  {% for pic in page.pics %}
-  <figure class="post-figure">
-    <img src="{{ pic }}" alt="{{ page.title }}" class="post-figure-image" >
-  </figure>
-  {% endfor %}
 
 </article>

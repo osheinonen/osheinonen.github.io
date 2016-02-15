@@ -13,4 +13,4 @@ mobile:
 categories: portfolio
 tags: development
 ---
-A website project for Iloleipuri.
+Website project for Martinex Oy. A recipe search site was created for the Iloleipuri product family during the project.

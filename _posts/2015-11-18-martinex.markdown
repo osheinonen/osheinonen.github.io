@@ -13,4 +13,4 @@ mobile:
 categories: portfolio
 tags: development
 ---
-A website project for Martinex.
+Martinex is a manufacturer and a wholesaler for gifts, household goods, textiles and toys. I worked as a Front End Developer during the project.

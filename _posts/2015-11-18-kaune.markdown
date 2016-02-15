@@ -13,4 +13,4 @@ mobile:
 categories: portfolio
 tags: design development
 ---
-A website project for Kaune.
+Kaune is a professional in glazing and associated metalworks. I created light and timeless design and turned that into a responsive Wordpress theme. 
