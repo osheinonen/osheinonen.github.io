@@ -7,14 +7,14 @@ background:
 ---
 ## Me
 
-I’m Oskari Heinonen a web developer & designer with over 3 years of experience. I'm highly self-motivated person with passion for learning new things. 
+I’m Oskari Heinonen a web developer & designer with over 3 years of experience in the field of web development. I'm highly self-motivated person with passion for learning new things. 
 
 ## Skills
 
-- strong skills in HTML5, CSS3, Sass/LESS
+- strong skills in HTML5, CSS3, Sass/Less
 - great knowledge of UI/UX Design
 - strong skills in creating Responsive Websites, SEO and Website Speed Optimization
-- very familiar with Javascript, jQuery, Grunt/Gulp, Git
+- very familiar with JavaScript, jQuery, Grunt/Gulp, Git
 - multi-year experience with Wordpress
 - familiar with Angular
 - strong skills in Photoshop and familiar with Illustrator
