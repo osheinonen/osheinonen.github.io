@@ -22,9 +22,13 @@ I’m Oskari Heinonen a web developer & designer with over 3 years of experience
 
 ## Experience
 
+### Web Developer
+> Wunderkraut
+> April 2016 - Present
+
 ### Front End Developer
 > Verkkovaraani
-> October 2014 - Present
+> October 2014 - April 2016
 
 ### Graphic Designer, Co-Founder
 > FakeFish Oy
