@@ -23,7 +23,7 @@ I’m Oskari Heinonen a web developer & designer with over 3 years of experience
 ## Experience
 
 ### Web Developer
-> Wunderkraut
+> Wunder
 > April 2016 - Present
 
 ### Front End Developer
