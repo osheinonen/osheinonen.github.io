@@ -7,7 +7,7 @@ background:
 ---
 ## Me
 
-I’m Oskari Heinonen a web developer & designer with over 3 years of experience in the field of web development. I'm highly self-motivated person with passion for learning new things. 
+I’m Oskari Heinonen a web developer & designer with 5 years of experience in the field of web development. I'm highly self-motivated person with passion for learning new things. 
 
 ## Skills
 
