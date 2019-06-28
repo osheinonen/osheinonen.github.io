@@ -1,31 +1,388 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<div class="home">
-  
-  <div class="home-heading">Hello! My name is Oskari.<br>I'm a Front End Developer &<br>Designer</div>
+  <title>oskari heinonen</title>
+  <meta name="description" content="Hello! My name is Oskari. I'm a Front End Developer / Designer">
 
-  <div class="home-text">
-    <p class="home-text-paragraph">I have a passion for learning new things. I am currently working as a Web Developer at <em class="emphasis">Wunder</em>.</p>
-  </div>
+  <link rel="canonical" href="http://osheinonen.github.io//">
+  <link rel="alternate" type="application/rss+xml" title="oskari heinonen" href="http://osheinonen.github.io//feed.xml">
 
-  <div class="home-work">
-    <h1 class="home-work-heading">Selected projects</h1>
-    <div class="home-work-list">
-      {% for post in site.categories.portfolio %}
-      <a href="{{ post.url | prepend: site.baseurl }}" class="work">
-        <div class="work-image" style="background-image: url({{ post.thumb }});"></div>
-        <div class="work-text">
-          <h2 class="work-text-title">{{ post.title }}</h2>
-          <div class="work-text-tag">
-            {% for tag in post.tags %}
-            <div class="work-text-tag-item">{{ tag }}</div>
-            {% endfor %}
-          </div>
+  <link href='https://fonts.googleapis.com/css?family=Playfair+Display:700,400,900' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Noto+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+
+  <link rel="apple-touch-icon" sizes="57x57" href="/assets/favicon/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="/assets/favicon/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="/assets/favicon/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="/assets/favicon/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="/assets/favicon/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="/assets/favicon/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="/assets/favicon/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="/assets/favicon/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon-180x180.png">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-194x194.png" sizes="194x194">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="assets/favicon/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="assets/favicon/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="/assets/favicon/manifest.json">
+  <link rel="mask-icon" href="/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="/assets/favicon/mstile-144x144.png">
+  <meta name="theme-color" content="#dcdcdc">
+  <style>
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+button,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+input[type=submit],
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline
+}
+
+a {
+	text-decoration: none
+}
+
+html {
+	line-height: 1
+}
+
+ol,
+ul {
+	list-style: none
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+caption,
+td,
+th {
+	text-align: left;
+	font-weight: 400;
+	vertical-align: middle
+}
+
+blockquote,
+q {
+	quotes: none
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+	content: "";
+	content: none
+}
+
+a img {
+	border: none
+}
+
+img,
+td {
+	vertical-align: top
+}
+
+button {
+	background: none
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
+	display: block
+}
+
+*,
+:after,
+:before {
+	box-sizing: border-box
+}
+
+html {
+	font-size: 62.5%
+}
+
+body {
+	font-family: Noto Sans, sans-serif;
+	font-size: 1.6em;
+	line-height: 1.4;
+	color: #eee;
+	padding: 10.08px
+}
+
+.site {
+	background-color: #161c21;
+	padding: 63px;
+	min-height: 100vh;
+	padding: 25.2px;
+	padding-top: 126px
+}
+
+.emphasis {
+	font-style: italic
+}
+
+.hightlight {
+	display: inline-block;
+	position: relative
+}
+
+.hightlight:after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: block;
+	background-color: hsla(0, 0%, 100%, .5)
+}
+
+.title {
+	display: inline-block;
+	vertical-align: top;
+	font-size: 18px;
+	font-size: 1.8rem;
+	letter-spacing: .05em;
+	color: #bbb;
+	font-weight: 700;
+	position: relative;
+	padding: 25.2px 0;
+	margin-bottom: 25.2px
+}
+
+.title:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	height: 2px;
+	height: .2rem;
+	width: 25.2px;
+	background-color: #bbb;
+	-webkit-transform-origin: 0 50%;
+	transform-origin: 0 50%;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	transition: -webkit-transform 1.2s cubic-bezier(.92, .03, .72, .89);
+	transition: transform 1.2s cubic-bezier(.92, .03, .72, .89);
+	transition: transform 1.2s cubic-bezier(.92, .03, .72, .89), -webkit-transform 1.2s cubic-bezier(.92, .03, .72, .89)
+}
+
+.home {
+	margin-top: 63px
+}
+
+.home-heading {
+	font-family: Playfair Display, serif;
+	font-size: 30px;
+	font-size: 3rem;
+	font-weight: 700;
+	line-height: 1.4
+}
+
+.home-heading,
+.home-text {
+	margin-bottom: 25.2px;
+	color: #bbb
+}
+
+.home-text {
+	font-family: Vollkorn, serif;
+	font-size: 20px;
+	font-size: 2rem;
+	line-height: 1.6;
+	max-width: 800px
+}
+
+.home-text-paragraph {
+	margin-bottom: 25.2px
+}
+
+.site-footer {
+	font-size: 15px;
+	font-size: 1.5rem;
+	color: #444;
+	text-transform: lowercase;
+	font-weight: 700
+}
+
+.site-footer a,
+.home-text a {
+	color: #28667b;
+	transition: color .12s ease-in-out
+}
+
+.site-footer a:hover,
+.home-text a:hover {
+	color: #1dadde
+}
+
+@media only screen and (min-width:48em) {
+	body {
+		padding: 20.16px
+	}
+	.site {
+		padding: 63px;
+		padding-top: 157.5px
+	}
+}
+
+@media only screen and (min-width:62em) {
+	body {
+		padding: 25.2px
+	}
+	.site {
+		padding: 94.5px;
+		padding-top: 189px
+	}
+	.home {
+		margin-top: 94.5px
+	}
+	.home-heading {
+		font-size: 4rem;
+		line-height: 1.25;
+		margin-bottom: 63px
+	}
+	.home-text {
+		font-size: 2.8rem;
+		margin-bottom: 63px
+	}
+}
+
+@media only screen and (min-width:75em) {
+	.home-heading {
+		font-size: 7rem;
+		line-height: 1.1
+	}
+	.home-work-heading {
+		font-size: 4.8rem;
+		line-height: 1.1
+	}
+}
+  </style>
+</head>
+
+<body>
+  <div class="site">
+    <header class="site-header">
+      <span class="title">oskari heinonen</span>
+    </header>
+    <main class="site-main">
+      <article class="home">
+        <div class="home-heading">
+          Hello! My name is Oskari.<br>I'm a Full Stack JavaScript Developer
         </div>
-      </a>
-      {% endfor %}
+        <div class="home-text">
+          <p class="home-text-paragraph">I have a passion for learning new things. I am currently working with technologies such as React, Node.js and GraphQl at <em class="emphasis"><a href="https://wunder.io/">Wunder.io</a></em></p>
+        </div>
+      </article>
+    </main>
+    <footer class="site-footer">
+    -- Hosted on <a href="https://pages.github.com/">GitHub Pages</a> & Built By <a href="https://www.linkedin.com/in/oskari-heinonen-2b71a86a">Oskari Heinonen</a>
+    </footer>
     </div>
   </div>
-</div>
+</body>
+</html>
